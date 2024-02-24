@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box-1{
+    height: 80px;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 10px;
+    background-color: blue;
+    animation-name: Movement;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+    animation-timing-function: ease-in;
+
+    /* transition: all; */
+    transition-duration: 5s;
+    transition-property: all;
+    transition-timing-function: linear;
+    
+}
+.box-1:hover{
+    background-color: red;
+    height: 300px;
+}
+/* @keyframes Movement{
+    0% {background-color: blue;}
+    25% {background-color: red;}
+    50% {background-color: green;}
+    75% {background-color: black;}
+    100% {background-color: pink;}
+} */
+@keyframes Movement{
+    from{
+        top: 2px;
+        left: 2px;
+
+    }
+    to{
+        top: 2px;
+        left: 1300px;
+
+    }
+}
